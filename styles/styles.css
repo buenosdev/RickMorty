@@ -50,6 +50,7 @@ header {
 /* From Uiverse.io by adamgiebl */ 
 #checkbox2 {
     display: none;
+
   }
   
   .toggle2 {
@@ -106,6 +107,65 @@ header {
     transition-duration: .5s;
     transform: rotate(180deg);
   }
+
+  .menu-text {
+    display: flex;
+    position: absolute;
+    top: 3%;
+    left: 15%;
+    transform: translateX(-100%); 
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s ease-out;
+    pointer-events: none;
+}
+
+#checkbox2:checked + .toggle2 + .menu-text {
+  opacity: 1;
+  transform: translateX(-50%);
+  pointer-events: auto;
+}
+.geral_button{
+display: flex;
+gap: 10px;
+}
+
+button {
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  padding: 1rem;
+}
+
+button:before {
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  margin-right: 10px;
+  transition: all .42s cubic-bezier(.25,.8,.25,1);
+  width: 0;
+}
+
+button:hover:before {
+  background-color: #fff;
+  width: 3rem;
+}
+
 
 
   /* Logo*/
