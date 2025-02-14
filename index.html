@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RMPD - Rick & Morty Police Department</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
@@ -24,9 +25,11 @@
         <section id="searchSection">
             <h2 style="font-family: 'Courier New', Courier;">Busca Criminal Interdimensional</h2>
             <br>
-            <input type="text" id="searchInput" placeholder="Digite o nome do suspeito...">
-            <button onclick="searchCharacter()">Buscar</button>
-        </section>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Digite o nome do suspeito..." onclick="searchCharacter()">
+                <i class="fas fa-search" onclick="searchCharacter()"></i>
+            </div>
+        </section>            
 
         <section id="resultsSection">
             <h2>Resultados</h2>
