@@ -167,3 +167,37 @@ header {
 .search-container i:hover {
     color: #40b5cb; 
 }
+
+/* Sessão de resultados*/
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.character-card {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.character-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.character-card h3 {
+    margin-top: 10px;
+    font-size: 1.3em;
+    color: rgba(192, 223, 64, 1);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #bbb;
+}

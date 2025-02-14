@@ -26,3 +26,9 @@ async function searchCharacter() {
         resultsDiv.innerHTML = `<p>Nenhum personagem encontrado.</p>`;
     }
 }
+
+document.getElementById('searchInput').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {  
+        searchCharacter();  
+    }
+});
