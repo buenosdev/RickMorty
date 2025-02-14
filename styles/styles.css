@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Get Schwifty';
+    src: url('./fonts/schwifty.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1A1A1A;
+    color: #f1f1f1;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Titulo*/
+
+.title {
+    margin-top: 150px;
+    font-family: 'Get Schwifty', sans-serif;
+    color: rgba(64, 181, 203, 1);
+    font-size: 8.5em;
+    text-align: center;
+    text-shadow: 
+        2px 2px 0px rgb(0, 0, 0),             
+        -2px 2px 0px rgb(0, 0, 0),
+        2px -2px 0px rgb(0, 0, 0),
+        -2px -2px 0px rgb(0, 0, 0),
+        3px 3px 0px rgba(192, 223, 64, 1),      
+        -3px 3px 0px rgba(192, 223, 64, 1),
+        3px -3px 0px rgba(192, 223, 64, 1),
+        -3px -3px 0px rgba(192, 223, 64, 1);   
+}
+
+
+/* From Uiverse.io by adamgiebl */ 
+#checkbox2 {
+    display: none;
+  }
+  
+  .toggle2 {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition-duration: .5s;
+  }
+  
+  .bars {
+    width: 100%;
+    height: 6px;
+    background-color: rgb(92, 176, 255);
+    border-radius: 6px;
+  }
+  
+  #bar5 {
+    transition-duration: .8s;
+  }
+  
+  #bar4,#bar6 {
+    width: 80%;
+  }
+  
+  #checkbox2:checked + .toggle2 .bars {
+    position: absolute;
+    transition-duration: .5s;
+  }
+  
+  #checkbox2:checked + .toggle2 #bar5 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+  }
+  
+  #checkbox2:checked + .toggle2 #bar4 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox2:checked + .toggle2 #bar6 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox2:checked + .toggle2 {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+  }
+
+
+  /* Logo*/
+.citadel{
+    display: flex;
+
+    max-height:64px;
+    max-width: 55px;
+}
+
+
+  /* Sessão de procurar*/
+  
+  #searchSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 95%; 
+    margin: 50px auto;
+    text-align: center;
+}
+
+
+#searchInput {
+    width: 80%; 
+    padding: 12px;
+    font-size: 1.1em;
+    border: 2px solid rgba(192, 223, 64, 1); 
+    border-radius: 20px;
+    background-color: #333; 
+    color: #fff; 
+    margin-bottom: 20px;
+    outline: none;
+    transition: border-color 0.3s ease; 
+}
+
+#searchInput:focus {
+    border-color: #40b5cb;
+}
+button {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: rgba(192, 223, 64, 1); 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #358b99;
+}
+
+button:active {
+    background-color: rgba(192, 223, 64, 1); 
+}

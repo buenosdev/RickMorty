@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RMPD - Rick & Morty Police Department</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+<!-- From Uiverse.io by adamgiebl --> 
+<input id="checkbox2" type="checkbox">
+<label class="toggle toggle2" for="checkbox2">
+  <div id="bar4" class="bars"></div>
+  <div id="bar5" class="bars"></div>
+  <div id="bar6" class="bars"></div>
+</label>
+<img src="./img/logo.png" class="citadel" alt="">
+    </header>
+
+    <main>
+        <h1 class="title">Citadel PI</h1>
+
+        <section id="searchSection">
+            <h2 style="font-family: 'Courier New', Courier;">Busca Criminal Interdimensional</h2>
+            <br>
+            <input type="text" id="searchInput" placeholder="Digite o nome do suspeito...">
+            <button onclick="searchCharacter()">Buscar</button>
+        </section>
+
+        <section id="resultsSection">
+            <h2>Resultados</h2>
+            <div id="results"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 RMPD - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
