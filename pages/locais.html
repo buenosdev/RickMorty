@@ -29,12 +29,24 @@
 
     <main>
         <h1 class="title">Locais</h1>
+        <div class="map-container">
+            <div class="planet" id="earth" onclick="showCrimeReport('Terra')"></div>
+            <div class="planet" id="gazorpazorp" onclick="showCrimeReport('Gazorpazorp')"></div>
+            <div class="planet" id="birdworld" onclick="showCrimeReport('Bird World')"><img src="" alt=""></div>
+        </div>
+        
+        <section id="crimeReport">
+            <h2>Relatório de Crime</h2>
+            <p id="crimeDetails">Clique em um planeta para ver os crimes.</p>
+        </section> 
+
 </main>
+
 
 <footer>
     <p>© 2025 CPI - Todos os direitos reservados.</p>
 </footer>
-
+<script src="../script/suspeitos.js"></script>
 </body>
 </html>
 
