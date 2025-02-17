@@ -242,6 +242,16 @@ button:hover:before {
     text-align: center;
 }
 
+.character-card:hover {
+  background-color: #222;
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.5s;
+  transform: scale(1.1);
+}
+
 .character-card img {
     width: 100%;
     border-radius: 10px;

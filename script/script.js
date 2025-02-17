@@ -20,6 +20,12 @@ async function searchCharacter() {
                 <p>Espécie: ${character.species}</p>
                 <p>Planeta: ${character.origin.name}</p>
             `;
+
+            characterCard.addEventListener('click', () => {
+                localStorage.setItem('selectedCharacter', JSON.stringify(character));
+                window.location.href = "./pages/relatorios.html";
+            });
+
             resultsDiv.appendChild(characterCard);
         });
     } else {
